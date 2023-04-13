@@ -181,7 +181,7 @@ resource "aws_route_table_association" "rtapvt2" {
   route_table_id = aws_route_table.private_2.id
 }
 
-# Security Group (for all ec2 instances)
+# Security Group (jump server)
 resource "aws_security_group" "allow_icmp_ssh" {
   name        = "allow_web_ssh"
   description = "Allow web inbound traffic"

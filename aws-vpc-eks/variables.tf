@@ -15,6 +15,11 @@ variable "aws_availability_zone2" {    # availability zone 2 of 2
   type    = string
 }
 
+variable "aws_ec2_keypair" {           # ssh keypair for all ec2 instances
+  default = "ponderosa1"
+  type    = string
+}
+
 variable "aws_sg_ingress_ipv4_block" { # security group allowed ipv4 ingress addresses
   default = "0.0.0.0/0"
   type    = string
@@ -22,11 +27,6 @@ variable "aws_sg_ingress_ipv4_block" { # security group allowed ipv4 ingress add
 
 variable "aws_sg_ingress_ipv6_block" { # security group allowed ipv6 ingress addresses
   default = "::/0"
-  type    = string
-}
-
-variable "aws_ec2_keypair" {           # ssh keypair for all ec2 instances
-  default = "ponderosa1"
   type    = string
 }
 
