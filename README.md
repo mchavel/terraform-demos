@@ -1,6 +1,9 @@
 # terraform-demos
 
-### Sample Terraform files for AWS 
+### Sample Terraform files for AWS provisiong
+
+All of these demos can be run against an AWS free tier account.  The EKS cluster will generate some modest charges if not removed within an hour or so.  
+
 
 * aws-vpc-ec2:  
 Creates a VPC spanning two Availability Zones \
@@ -23,7 +26,6 @@ Also creates an IAM OIDC Provider and the following add-ons:
   * AWS Load Balancer Controller 
 
 
-All of these demos can be run against an AWS free tier account.  The EKS cluster will generate some modest charges if not removed within an hour or so.  
 
 ### Prerequisites:
 
@@ -40,6 +42,11 @@ All of these demos can be run against an AWS free tier account.  The EKS cluster
 5. terraform init
 6. terraform plan
 7. terraform apply
+
+### Verification:
+* Check objects created in the AWS web console (VPC, EC2, EKS)
+* For the EC2 demos, the web servers should be reachable by a web browser using the load balancer dns name
+* For the EKS demo see aws-vpc-eks/k8s/README.md
 
 ### Cleanup:
 
