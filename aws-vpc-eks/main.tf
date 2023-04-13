@@ -260,7 +260,7 @@ resource "aws_eip" "jump" {
   vpc                       = true
   network_interface         = aws_network_interface.jump.id
   associate_with_private_ip = "10.0.1.10"
-  depends_on                = [aws_internet_gateway.demoG]
+  depends_on                = [aws_internet_gateway.demo]
 }
  
 resource "aws_network_interface" "jump" {

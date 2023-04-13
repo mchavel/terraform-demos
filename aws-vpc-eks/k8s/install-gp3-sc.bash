@@ -1,5 +1,5 @@
 # Create gp3 storage class
-kubectl appy -f -<<EOF
+kubectl apply -f -<<EOF
 kind: StorageClass
 apiVersion: storage.k8s.io/v1
 metadata:
