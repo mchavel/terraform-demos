@@ -5,7 +5,7 @@
 All of these demos can be run against an AWS free tier account.  The EKS cluster will generate some modest charges if not removed within an hour or so.  
 
 
-* aws-vpc-ec2:  
+* **aws-vpc-ec2:**  
 Creates a VPC spanning two Availability Zones \
  one public and one private subnet in each AZ \
  NAT Gateway for each private subnet \
@@ -13,10 +13,10 @@ Creates a VPC spanning two Availability Zones \
  Elastic Load Balancer targeting EC2 web servers \
  in the private subnet of each AZ
  
-* aws-vpc-ec2-asg:  
+* **aws-vpc-ec2-asg:**  
 As above, but with an Auto Scaling Node Group and EC2 Launch Template replacing the two static EC2 web servers.
 
-* aws-vpc-eks:  
+* **aws-vpc-eks:**  
 As above, but with an EKS Cluster and EKS Node Group \
 Also creates an IAM OIDC Provider and the following add-ons: 
   * EBS CSI Driver for Dynamic Persistent Volumes
@@ -46,7 +46,8 @@ Also creates an IAM OIDC Provider and the following add-ons:
 ### Verification:
 * Check objects created in the AWS web console (VPC, EC2, EKS)
 * For the EC2 demos, the web servers should be reachable by a web browser using the load balancer dns name
-* For the EKS demo see aws-vpc-eks/k8s/README.md
+* For the EKS demo see [aws-vpc-eks/k8s/README.md](https://github.com/mchavel/terraform-demos/blob/main/aws-vpc-eks/k8s/README.md) for info on connecting to the cluster and additional setup steps.
+
 
 ### Cleanup:
 
