@@ -46,7 +46,7 @@ Also creates an IAM OIDC Provider and the following add-ons:
 ### Verification:
 * Check objects created in the AWS web console (VPC, EC2, EKS)
 * For the EC2 demos, the web servers should be reachable by a web browser using the load balancer dns name
-* For the EKS demo see [aws-vpc-eks/k8s/README.md](https://github.com/mchavel/terraform-demos/blob/main/aws-vpc-eks/k8s/README.md) for info on connecting to the cluster and additional setup steps.
+* For the EKS demo see [aws-vpc-eks/k8s/README.md](https://github.com/mchavel/terraform-demos/blob/main/aws-vpc-eks/k8s/README.md) for info on connecting to the cluster and some additional setup steps to run the sample Kubernetes applications..
 
 
 ### Cleanup:
@@ -55,9 +55,3 @@ Also creates an IAM OIDC Provider and the following add-ons:
 
 
 
-
- 
- 
-
-
- 

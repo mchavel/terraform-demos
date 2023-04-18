@@ -16,8 +16,11 @@
    install-gp3-sc.bash
 
 
-4. You can now deploy to the cluster.  e.g.
+4. You can now deploy to the cluster.  Some simple Kubernetes applications are included:
 
-   kubetcl apply -f samplek8s-nginx.yaml 
+   kubectl apply -f samplek8s-mongodb-pvc.yaml   
 
+   kubectl apply -f samplek8s-mongoexpress.yaml
 
+   kubectl apply -f samplek8s-web-nlb.yaml
+   
